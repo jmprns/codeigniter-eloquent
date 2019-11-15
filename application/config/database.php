@@ -102,8 +102,8 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 $eloquent['db'] = array(
         'driver'    => 'mysql',
         'host'      => 'localhost',
-        'database'  => '',
-        'username'  => '',
+        'database'  => 'fms',
+        'username'  => 'root',
         'password'  => '',
         'charset'   => 'utf8',
         'collation' => 'utf8_unicode_ci',
