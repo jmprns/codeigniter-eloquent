@@ -1,6 +1,5 @@
 <p align="center">
     <img src="https://cdn.freebiesupply.com/logos/large/2x/codeigniter-logo-svg-vector.svg" width="200" height="200">
-    <img src="https://image.flaticon.com/icons/svg/1089/1089316.svg" width="200" height="200">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" width="200" height="200">
 </p>
 
@@ -23,6 +22,51 @@ $ git clone https://github.com/jmprns/codeigniter-eloquent.git
 $ cd codeigniter-eloquent
 $ composer install
 ```
+
+## Setting Up
+
+First, go to the `application/config/database.php` to update your database credentials.
+
+```PHP
+$eloquent['db'] = array(
+        'driver'    => 'mysql',
+        'host'      => 'localhost',
+        'database'  => '',
+        'username'  => '',
+        'password'  => '',
+        'charset'   => 'utf8',
+        'collation' => 'utf8_unicode_ci',
+        'prefix'    => ''
+    );
+```
+You need to autoload the database library to instantiate the capsule manager. Go to the `application/config/autoload.php` and type the `database` in the array to look like this:
+
+```PHP
+$autoload['libraries'] = array('database');
+```
+
+## Model
+
+To set up the model, you can also autoload the model to access it without using the `use path\to\model` method. The model should extend the eloquent class.
+
+```PHP
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+use Illuminate\Database\Eloquent\Model as Eloquent;
+
+class Test extends Eloquent
+{
+    protected $guarded = [];
+    protected $table = "test";
+    public $timestamps = false;
+
+}
+```
+
+## Guides
+
+For guides and manual of the Eloquent, you can go to the [Laravel Eloquent](https://laravel.com/docs/5.8/eloquent).
+
 
 
 
