@@ -1,5 +1,6 @@
 <p align="center">
     <img src="https://cdn.freebiesupply.com/logos/large/2x/codeigniter-logo-svg-vector.svg" width="200" height="200">
+    <img src="https://image.flaticon.com/icons/svg/1089/1089316.svg" width="200" height="200">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" width="200" height="200">
 </p>
 
@@ -18,6 +19,7 @@ The Illuminate Database component is a full database toolkit for PHP, providing 
 ## Installation
 
 ```sh
+$ git clone https://github.com/jmprns/codeigniter-eloquent.git
 $ cd codeigniter-eloquent
 $ composer install
 ```
