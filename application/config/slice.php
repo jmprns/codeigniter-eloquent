@@ -36,7 +36,7 @@ $config['cache_time'] = 3600;
 | Set to TRUE to autoload CodeIgniter Libraries and Helpers
 |
 */
-$config['enable_autoload'] = FALSE;
+$config['enable_autoload'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
