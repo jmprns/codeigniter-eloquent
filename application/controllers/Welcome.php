@@ -20,10 +20,6 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		// $this->load->view('welcome_message');
-		
-		$data = Test::all();
-
-		echo json_encode($data);
+		return redirect(base_url()."citizen/signin");
 	}
 }
